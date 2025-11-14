@@ -1,7 +1,4 @@
 ###############################################################################
-# Date: 2022.02
-# Author: Rajesh Ladwa
-# Email: rajesh.ladwa@altonomy.com
 # Github: https://bitbucket.org/altonomy/altonomy-apl-bots/
 # Description: TWAP Trading Bot
 ###############################################################################
