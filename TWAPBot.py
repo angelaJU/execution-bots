@@ -1,6 +1,6 @@
 ###############################################################################
-# Github: https://bitbucket.org/altonomy/altonomy-apl-bots/
 # Description: TWAP Trading Bot
+
 ###############################################################################
 
 import functools
