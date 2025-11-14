@@ -1,8 +1,4 @@
-# Altonomy-Legacy-Bots
-
-> Legacy Bots
-
-This package contains all the legacy bots from 2018
+# Legacy-Bots
 
 ---
 
@@ -97,14 +93,6 @@ The secrets repository requires the following to work properly:
 - TBC
 
 ---
-
-## Support
-
-Reach out to us at one of the following places!
-
-- Website at [altonomy.com](https://www.altonomy.com)
-- Email at [support@altonomy.com](mailto:support@altonomy.com)
-
 ---
 
 ## License
@@ -112,7 +100,7 @@ Reach out to us at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2019 [Altonomy Pte Ltd](https://www.altonomy.com).
+
 
 **To The Moon!**
 
