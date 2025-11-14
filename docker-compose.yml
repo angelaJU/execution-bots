@@ -1,0 +1,33 @@
+version: '3'
+
+x-extra_hosts:
+  &default-extra_hosts
+    - "pypi.altono.me:3.112.230.134"
+    - "repos.altono.me:18.179.222.76"
+
+services:
+  aplbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysqldb
+    extra_hosts: *default-extra_hosts
+    command: >
+      bash -c "sleep 10 && altaplbot ${ACCOUNT} --bot_id ${BOT_ID} \
+        --altcoin ${ALT_COIN} \
+        --quotecoin ${QUOTE_COIN} \
+        --method ${METHOD}"
+
+  mysqldb:
+    # default port: 3306
+    ports:
+      - 3309:3306
+    # mysql -P 3309 -h 127.0.0.1 -u root Altonomy -ppassword
+    # select * from service;
+    build:
+      context: docker
+      dockerfile: mysql/Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'Altonomy'
